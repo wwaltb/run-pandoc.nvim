@@ -1,19 +1,19 @@
 # run-pandoc.nvim
 
 A simple plugin I made to compile markdown files in Neovim using
-[pandoc](https://github.com/jgm/pandoc)
+[pandoc](https://github.com/jgm/pandoc).
 
 ## Getting Started
 
 ### Required dependencies
 
-- [pandoc](https://github.com/jgm/pandoc) 
+- [pandoc](https://github.com/jgm/pandoc).
 
-- A TeX system. I recommend [TeX Live](https://tug.org/texlive/)
+- A TeX system. I recommend [TeX Live](https://tug.org/texlive/).
 
 ### Installation
 
-Using [lazy.nvim](https://github.com/folke/lazy.nvim)
+Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 -- init.lua:
