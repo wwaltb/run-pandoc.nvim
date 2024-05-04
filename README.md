@@ -7,7 +7,7 @@ A simple plugin I made to compile markdown files in Neovim using
 
 ### Required dependencies
 
-- [pandoc](https://github.com/jgm/pandoc).
+- [pandoc](https://github.com/jgm/pandoc)
 
 - A TeX system. I recommend [TeX Live](https://tug.org/texlive/).
 
