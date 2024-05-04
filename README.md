@@ -21,7 +21,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim)
     'wwaltb/run-pandoc.nvim'
 }
 
--- plugins/telescope.lua:
+-- plugins/run-pandoc.lua:
 return {
     'wwaltb/run-pandoc.nvim'
 }
