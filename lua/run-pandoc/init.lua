@@ -2,13 +2,13 @@ local M = {}
 
 function M.setup() end
 
-function M.run()
+function M.compile()
+   local supported_filetypes = ["markdown", "rst", "html", "latex", "docx"]
    local buf_file_type = vim.api.nvim_buf_get_option(0, "filetype")
    if buf_file_type ~= "markdown" then
       print("run_pandoc: Not a markdown file")
       return
    end
-
 
    local buf_name = vim.api.nvim_buf_get_name(0)
    local buf_name_pdf_ext = buf_name:match("(.+)%..+") .. ".pdf"
