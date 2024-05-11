@@ -21,7 +21,10 @@ function M.compile()
 	local buf_name = vim.api.nvim_buf_get_name(0)
 	local buf_name_pdf_ext = buf_name:match("(.+)%..+") .. ".pdf"
 
-	local output = vim.fn.system(string.format("pandoc %s -o %s 2>&1", buf_name, buf_name_pdf_ext))
+	local options = "--variable colorlinks=true"
+	local command = string.format("pandoc %s -o %s %s 2>&1", buf_name, buf_name_pdf_ext, options)
+
+	local output = vim.fn.system(command)
 	print(output)
 
 	if vim.v.shell_error == 0 then
