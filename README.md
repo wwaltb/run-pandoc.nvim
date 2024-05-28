@@ -29,12 +29,12 @@ return {
 
 ## Usage
 
-`run-pandoc.nvim` uses it's `run` command to compile the file open in the
-current buffer into a pdf. It will output to the same location as the original
-file and with the same name.
+`run-pandoc.nvim` uses it's `compile` command to compile the file open in
+the current buffer into a pdf. It will output to the same location as the
+original file and with the same name.
 
 Using Lua:
 
 ```lua
-vim.keymap.set('n', '<leader>ff', require("run-pandoc").run, {})
+vim.keymap.set('n', '<leader>cp', require("run-pandoc").compile, {})
 ```
